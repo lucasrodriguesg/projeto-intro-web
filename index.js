@@ -1,29 +1,21 @@
-const sobremesa1 = {
-    nome1 : "brigadeiro",
-    valorBrigadeiro : 3.00,
-    valorCustoBrigadeiro : 1.00,
-    categoriaBrigadeiro : "Sobremesas",
-    produtoVegano : false,
-    ingredientePrincipal1 : "Leite Condensado"
-}
-const sobremesa2 = {
-    nome2 : "Bolo no Pote",
-    valorBoloNoPote : 12.50,
-    valorCustoBolo : 4.50,
-    categoriaBolo : "Sobremesas",
-    produtoVegano : false,
-    ingredientePrincipal2 : ["Farinha de Trigo"]
-}
-const sobremesa3 = {
-    nome3: "Brownie Vegano",
-    valorBrownie : 8.00,
-    valorCustoBrownie : 1.80,
-    categoriaBrownie : "Sobremesas",
-    produtoVegano : true,
-    ingredientePrincipal3 : "Açúcar Mascavo"
+const sobremesas =[
+    {nome: "Brigadeiro Tradicional", valor: 3.00, custo: 1.00, categoria: "Tradicional", ingredientePrincipal: "Leite Condensado"},
+    {nome: "Bolo no Pote", valor: 12.50, custo: 4.50, categoria: "Tradicional", ingredientePrincipal: "Farinha de Trigo"},
+    {nome: "Brownie Vegano", valor: 8.00, custo: 1.80, categoria: "Veganos", ingredientePrincipal: "Açúcar Mascavo"},
+    {nome: "Bolo Especial", valor: 60.00, custo: 23.00, categoria: "Zero Lactose", ingredientePrincipal: "Leite Condensado Zero"}
+]
+
+
+for (let i= 0; i< sobremesas.length; i++){
+    console.log(sobremesas[i])
 }
 
- //const valorMedioProdutos = ((valorBrigadeiro) + (valorBoloNoPote) + (valorBrownie)/3)
+function relatorioSobremesas(obj) {
+    return obj
+}
+console.log(relatorioSobremesas(sobremesas))
+
+
 //  const somenteVeganos = (produtoVegano1 && produtoVegano2 && produtoVegano3)
 //  const categoriaEmpresa = (categoriaBrigadeiro, categoriaBolo, categoriaBrownie)
 
@@ -63,17 +55,17 @@ const sobremesa3 = {
 //  }
 // console.log(principaisSobremesas)
 
-let sobremesasVeganas = []
-if (sobremesa1.produtoVegano === true){
-    sobremesasVeganas.push(sobremesa1)
-    alert("Sobremesas não veganas não foram adicionadas")
-} else if (sobremesa2.produtoVegano === true){
-    sobremesasVeganas.push(sobremesa2)
-    alert("Sobremesas não veganas não foram adicionadas")
-} else if (sobremesa3.produtoVegano === true){
-    sobremesasVeganas.push(sobremesa3)
-    alert("Sobremesas não veganas não foram adicionadas")
-} else { (sobremesa1 || sobremesa2 || sobremesa3 === false)
-    alert("Sobremesas não veganas não foram adicionada")
-}
-console.log (sobremesasVeganas)
+// let sobremesasVeganas = []
+// if (sobremesa1.produtoVegano === true){
+//     sobremesasVeganas.push(sobremesa1)
+//     alert("Sobremesas não veganas não foram adicionadas")
+// } else if (sobremesa2.produtoVegano === true){
+//     sobremesasVeganas.push(sobremesa2)
+//     alert("Sobremesas não veganas não foram adicionadas")
+// } else if (sobremesa3.produtoVegano === true){
+//     sobremesasVeganas.push(sobremesa3)
+//     alert("Sobremesas não veganas não foram adicionadas")
+// } else { (sobremesa1 || sobremesa2 || sobremesa3 === false)
+//     alert("Sobremesas não veganas não foram adicionada")
+// }
+// console.log (sobremesasVeganas)
